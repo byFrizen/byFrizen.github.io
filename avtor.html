@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	  <link href="http://allfont.ru/allfont.css?fonts=infiltrace-italic" rel="stylesheet" type="text/css" />
+	  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&amp;subset=cyrillic" rel="stylesheet">
+		<link href="http://allfont.ru/allfont.css?fonts=barcode-font" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="styles/avtor.css">
+	<title>Владислав Фризен</title>
+</head>
+<body>
+	<div class="container">
+		<div class="prost" style="background-image: url('images/frizen.gif');">
+			<h1>Vladyslav Frizen</h1>
+			<div class="ava" style="background-image: url('images/ava.jpg');">
+			</div>
+			<div class="btnCode" title="Показать код">
+				<div class="btnCodeOff activeCode">
+					<i class="fa fa-toggle-off fa-2x" aria-hidden="true"></i> <p>Показать код</p>
+				</div>
+				<div class="btnCodeOn" title="Скрыть код">
+					<i class="fa fa-toggle-on fa-2x" aria-hidden="true"></i>
+				</div>
+			</div>
+				<code>
+					function isNumberKey(evt) {<br>
+					    var charCode = (evt.which) ? evt.which : <event class="keyCodebr"></event>
+					    if (charCode > 31 && (charCode < 48 || charCode > 57)) return false;<br>
+					       return true;<br>
+					 }<br>
+
+
+					$("#name").blur(function(){<br>
+							var per_name =/[^А-ЯЁа-яёA-Za-z ]/i;<br>
+						if(per_name.test($("#name").val()))<br>
+						{<br>
+							alert("Только латинские и кирилические символы!");<br>
+							$(this).css("border-color", "red");<br>
+							$(this).focus();<br>
+						}<br>
+						else{<br>
+							$(this).css("border-color", "none");<br>
+						}<br>
+					});<br>
+
+					$("#eVal").blur(function(){<br>
+							var per_name =/^[A-Za-z0-9][A-Za-z0-9\.\-_]*[A-Za-z0-9]*@([A-Za-z0-9]+([A-Za-z0-9-]*[A-Za-z0-9]+)*\.)+[A-Za-z]*$/i;<br>
+						if(per_name.test($("#eVal").val()))<br>
+						{<br>
+							$(this).css("border-color", "none");<br>
+						}<br>
+						else{<br>
+							
+							alert("Не корректно введен эмеил!!");<br>
+							$(this).css("border-color", "red");<br>
+							$(this).focus();<br>
+						}<br>
+					});<br><br>
+					$('textarea').keyup(function(){<br>
+						var	tlength = $('textarea').val().length;<br> 
+					$('#arealength').text("Кол-во символов: " + tlength);<br>
+					});
+
+				</code>
+			<form>
+				<h2>Связаться с разработчиком</h2>
+				<label>ФИО</label>
+				<input type="text" minlength="6" pattern="[a-zA-ZА-Яа-я]+" placeholder="Ваше имя" id="name">
+				<label>Электронная почта</label>
+				<input type="email" id="eVal" minlength="7" placeholder="user@nmail.com">
+				<label>Номер телефона</label>
+				<INPUT type="text" placeholder="380000000000" value="380" maxlength="12" minlength="12" onkeypress="return isNumberKey(event)">
+				<br>
+				<textarea placeholder="Ваше сообщение"></textarea>
+				<p id="arealength"></p>
+				<input type="submit" id="sub" name="">
+							</form>
+			<div class="endc">
+				<div class="cnfof">
+					<p>NUMBER: 0933063860</p>
+				</div>
+				<h3>Vlad Frizen</h3>
+				<div class="cnfof">
+					<p>EMAIL: JOHNNYSANTANO2@GMAIL.COM</p>
+				</div>
+			</div>
+		</div>
+		<div class="soc">
+			<div class="name">
+				<h3>V</h3>
+				<h3>L</h3>
+				<h3>A</h3>
+				<h3>D</h3>
+				<h3>I</h3>
+				<h3>S</h3>
+				<h3>L</h3>
+				<h3>A</h3>
+				<h3>V</h3>
+			</div>
+			<a href="https://vk.com/id144665301" title="Страница ВКонтакте"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/profile.php?id=100007183729480&ref=bookmarks" title="Страница Facebook"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/frizen.v/" title="Страница Instagram"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+			<a href="https://ask.fm/VladFrizen" title="Страница Ask.fm"><i class="fa fa-adn fa-2x" aria-hidden="true"></i></a>
+			<a href="index.html" title="Emigrant bF"><i class="fa fa-wheelchair-alt" aria-hidden="true"></i></a>
+			<div class="name">
+				<h3>F</h3>
+				<h3>R</h3>
+				<h3>I</h3>
+				<h3>Z</h3>
+				<h3>E</h3>
+				<h3>N</h3>
+			</div>
+		</div>
+	
+
+
+	<script src="https://use.fontawesome.com/a01984f80b.js"></script>
+	<script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="scripts/avtor.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body{
+	grid-template-rows: 100vh 1100px 200px;
+}
+
+
+/* Заголовок */
+#turh{
+	margin-top: 5%;
+	text-align: center;
+	font-family: 'Ogilvie Cyr', arial;
+	font-size: 60px;
+	color: #703D40;
+}
+
+.contact-info{
+	transition: .5s;
+	font-size: 25px;
+ 	width: 70%;
+	height: 350px;
+	display: flex;
+	font-family: 'Beast Impacted Regular', arial;
+	background-position: center;
+	background-size: cover;
+	color: red;
+	margin: auto;
+	opacity: .7;
+	border: 3px solid rgba(39,80,89, 0.7);
+	border-radius: 33px 100px 24px 84px;
+	box-shadow: 8px 8px 29px -8px #000000;
+}
+
+.vkl{
+	align-self: flex-end;
+	margin-top: 10px;
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	font-size: 16px;
+}
+.vkl .tabs{
+	width: 45%;
+	margin-right: 8%;
+	display: flex;
+}
+.vkl .tabs .tab{
+	cursor: pointer;
+	flex-grow: 1;
+	text-align: center;
+	width: 171px;
+	padding: 5px;
+	color: black;
+}
+.vkl .tabs .tab:hover{
+	opacity: 0.7;
+}
+.tactive{
+	border: 1px solid silver;
+	border-bottom: none;
+	border-radius: 10px 10px 0 0;
+	color: red !important;
+	box-shadow: 0 3px 4px black inset; 
+}
+.tactive:hover{
+	opacity: 1 !important;
+}
+.vkl .content{
+	height: 270px;
+	border: 1px solid silver;
+	border-top: none;
+	box-shadow: 0 -5px 10px #575555 inset; 
+	border-radius: 0 10px 10px 10px;
+
+}
+.tab-cont{
+	width: 90%;
+	height: 90%;
+	margin: auto;
+	display: none;
+}
+.cactive{
+	display: block;
+}
+.ul-c{
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+	display: flex;
+	width: 90%;
+	height: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.ul-c li{
+	width: 50%;
+	font-size: 30px;
+}
+.ul-c p{
+	width: 50%;
+}
+
+.cura{
+	float: left;
+	opacity: 0.8;
+	border-radius: 10px;
+	width: 40%;
+	height: 60%;
+	background-position: center;
+	background-size: cover;
+	border: 1px solid rgba(39,80,89, 0.7);
+	box-shadow: 8px 8px 29px -8px #000000;
+}
+.cura:hover{
+	transition: .6s;
+	opacity: 1;
+}
+.cura-ul, .cura-p{
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+	float: left;
+	width: 50%;
+	margin-left: 5%;
+}
+.cura-p{
+	font-size: 25px;
+}
+
+#tnum, #tel{
+	font-family: 'YouMurderer BB', arial;
+	font-size: 30px;
+}
+#map{
+	margin-top: 20px;
+	margin: auto;
+	opacity: 0.6;
+	border-radius: 33px 100px 24px 84px;
+	border: 3px solid rgba(39,80,89, 0.5);
+	box-shadow: 8px 8px 29px -8px #000000;
+
+}
