@@ -29,6 +29,10 @@
 </head>
 
 <body>
+	<div class="pb-preload">
+		<span class="icon-logo"></span></a>
+		<div class="pb-preload-rotate"></div>
+	</div>
 	<video autoplay loop>
 		            <source src="img/video/bg-v.mp4" type="video/mp4">
 		            <source src="img/video/bg-v.webm" type="video/webm">   
@@ -64,22 +68,22 @@
 		   
 		</div>
 		<div class="section" id="section2" style="background-image: url(img/img7.jpg);">
-				<div class="slide" data-anchor="slide1" style="background-image: url(img/img7.jpg);"> 
-					<ul>
+				<div class="slide"  data-anchor="slide1" style="background-image: url(img/img7.jpg);"> 
+					<ul id="pb-slide-one">
 						<li>Отличная возможность приобрести навыки самозащиты. В любой ситуации ты сможешь постоять за себя.</li>
 						<li>Почувствовать уверенность в себе, в своих силах и возможностях.</li>
 						<li>Измени отношение к себе у окружающих</li>
 					</ul>
 				</div>
 				<div class="slide" data-anchor="slide2" style="background-image: url(img/img8.jpg);">
-					<ul>
+					<ul id="pb-slide-two">
 						<li>У нас ты сможешь сделать фигуру стройной, гибкой, пластичной.</li>
 						<li>Улучшишь общее состояние здоровья. Повысишь имунитет.</li>
 						<li>Развинь воображение, тактическое и абстрактное мышление, скорость восприятия, внимание, дисциплину и самообладание.</li>
 					</ul>
 				</div>
 				<div class="slide" data-anchor="slide3" style="background-image: url(img/img1.jpg);"> 
-					<ul>
+					<ul id="pb-slide-three">
 						<li>Расширить круг знакомств, приобрести новых верных друзей</li>
 						<li>Будь индивидуальностью, иди впереди всех, реализуй себя, развивайся.</li>
 						<li>Оставайся в числе лучших!</li>
@@ -92,7 +96,7 @@
 			
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-6">
+					<div class="col-sm-6" id="pb-fotorama">
 						<div class="fotorama s3-anim" data-width="600" data-height="400" data-nav="thumbs" data-thumbwidth="100"  data-thumbheights="60" data-thumbborderwidth=5>
 							<img src="img/photos/img1.jpg">
 							<img src="img/photos/img2.jpg">
@@ -106,7 +110,7 @@
 						
 						</div>
 					</div>
-					<div class="col-sm-6">
+					<div class="col-sm-12 col-md-6" >
 						<div class="fotorama-content">
 							<span class="icon-logo"></span>
 							<h2>Стань члеHом семьи</h2>
@@ -202,10 +206,10 @@
 	
 	
 	<link rel="stylesheet" href="css/main.min.css">
-	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuQIk3PTXhHUhlh9SZ6KeZ9cOuM2NdbB8&callback=initMap">
-    </script>
+	
 	<script src="js/scripts.min.js"></script>
-
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuQIk3PTXhHUhlh9SZ6KeZ9cOuM2NdbB8&callback=pbInitMap">
+    </script>
 </body>
 </html>
